@@ -24,6 +24,17 @@ input=$(echo "$input" | sed '/^$/d')
 # Strip leading/trailing whitespace
 output=$(echo "$input" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
 
+# Word replacements (proper nouns Whisper often gets wrong)
+output=$(echo "$output" | sed \
+  -e 's/Joel Gula/Joel Gullo/gi' \
+  -e 's/Joel Gouda/Joel Gullo/gi' \
+  -e 's/Mr\. Gula/Mr. Gullo/gi' \
+  -e 's/Mr\. Gouda/Mr. Gullo/gi' \
+  -e 's/Jai Hei/Jiahui/gi' \
+  -e 's/Gia Hui/Jiahui/gi' \
+  -e 's/Jia Hui/Jiahui/gi' \
+)
+
 # OPTIONAL: Strip markdown code fences (uncomment if pasting to plain text apps)
 # output=$(echo "$output" | sed -e 's/^```[a-z]*$//' -e 's/^```$//' | sed '/^$/d')
 
