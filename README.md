@@ -133,6 +133,19 @@ Remove the `#` at the start to activate it.
 - Add corrections to `pre-ai.sh` following the pattern shown above
 - Technical terms with unusual pronunciations need explicit mappings
 
+## Contributing
+
+Found a bug? Have a suggestion? Want to share word corrections that work well for your field?
+
+- **Open an issue** with your feedback or ideas
+- **Submit a PR** with new word replacements or prompt improvements
+- **Share your customizations** - others in your field might benefit
+
+I'm especially interested in:
+- Word corrections for specific domains (medical, legal, scientific terms)
+- Improvements to the system prompt
+- Better handling of edge cases
+
 ## Credits
 
 Based on my experiments fine-tuning Whisper for dictation. More details at:
