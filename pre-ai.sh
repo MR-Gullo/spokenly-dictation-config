@@ -1,0 +1,212 @@
+#!/bin/bash
+# Spokenly Pre-AI Processing Script
+# Normalizes common dictation errors BEFORE the LLM processes them
+# Usage: Paste path into Spokenly > Settings > AI Prompt > Bash Scripts > Before
+#
+# Add new replacements as: -e 's/heard/correct/gi' \
+
+cat | sed \
+  -e 's/clawed code/Claude Code/gi' \
+  -e 's/cloud code/Claude Code/gi' \
+  -e 's/claud code/Claude Code/gi' \
+  -e 's/claude cole/Claude Code/gi' \
+  -e 's/vs code/VS Code/gi' \
+  -e 's/v s code/VS Code/gi' \
+  -e 's/vee ess code/VS Code/gi' \
+  -e 's/visual studio code/VS Code/gi' \
+  -e 's/x code/Xcode/gi' \
+  -e 's/ex code/Xcode/gi' \
+  -e 's/late ex/LaTeX/gi' \
+  -e 's/latex/LaTeX/gi' \
+  -e 's/lay tech/LaTeX/gi' \
+  -e 's/lay tex/LaTeX/gi' \
+  -e 's/pie thon/Python/gi' \
+  -e 's/python/Python/gi' \
+  -e 's/java script/JavaScript/gi' \
+  -e 's/javascript/JavaScript/gi' \
+  -e 's/type script/TypeScript/gi' \
+  -e 's/typescript/TypeScript/gi' \
+  -e 's/c plus plus/C++/gi' \
+  -e 's/c\+\+/C++/g' \
+  -e 's/see sharp/C#/gi' \
+  -e 's/c sharp/C#/gi' \
+  -e 's/go lang/Go/gi' \
+  -e 's/golang/Go/gi' \
+  -e 's/rust lang/Rust/gi' \
+  -e 's/git hub/GitHub/gi' \
+  -e 's/github/GitHub/gi' \
+  -e 's/git lab/GitLab/gi' \
+  -e 's/gitlab/GitLab/gi' \
+  -e 's/num pie/NumPy/gi' \
+  -e 's/numpy/NumPy/gi' \
+  -e 's/num py/NumPy/gi' \
+  -e 's/pie torch/PyTorch/gi' \
+  -e 's/pytorch/PyTorch/gi' \
+  -e 's/tensor flow/TensorFlow/gi' \
+  -e 's/tensorflow/TensorFlow/gi' \
+  -e 's/pan das/pandas/gi' \
+  -e 's/docker/Docker/gi' \
+  -e 's/cooper net ease/Kubernetes/gi' \
+  -e 's/kubernetes/Kubernetes/gi' \
+  -e 's/cube cuddle/kubectl/gi' \
+  -e 's/cube control/kubectl/gi' \
+  -e 's/cube c t l/kubectl/gi' \
+  -e 's/json/JSON/gi' \
+  -e 's/j son/JSON/gi' \
+  -e 's/yaml/YAML/gi' \
+  -e 's/y a m l/YAML/gi' \
+  -e 's/html/HTML/gi' \
+  -e 's/h t m l/HTML/gi' \
+  -e 's/css/CSS/gi' \
+  -e 's/c s s/CSS/gi' \
+  -e 's/api/API/gi' \
+  -e 's/a p i/API/gi' \
+  -e 's/rest api/REST API/gi' \
+  -e 's/graphql/GraphQL/gi' \
+  -e 's/graph q l/GraphQL/gi' \
+  -e 's/grok/Groq/gi' \
+  -e 's/grow q/Groq/gi' \
+  -e 's/quinn/Qwen/gi' \
+  -e 's/qwen/Qwen/gi' \
+  -e 's/kwen/Qwen/gi' \
+  -e 's/llama/Llama/gi' \
+  -e 's/lama/Llama/gi' \
+  -e 's/mistral/Mistral/gi' \
+  -e 's/gemini/Gemini/gi' \
+  -e 's/anthropic/Anthropic/gi' \
+  -e 's/open ai/OpenAI/gi' \
+  -e 's/openai/OpenAI/gi' \
+  -e 's/sql/SQL/gi' \
+  -e 's/s q l/SQL/gi' \
+  -e 's/my sequel/MySQL/gi' \
+  -e 's/mysql/MySQL/gi' \
+  -e 's/post gress/PostgreSQL/gi' \
+  -e 's/postgres/PostgreSQL/gi' \
+  -e 's/post gres q l/PostgreSQL/gi' \
+  -e 's/mongo d b/MongoDB/gi' \
+  -e 's/mongodb/MongoDB/gi' \
+  -e 's/redis/Redis/gi' \
+  -e 's/read is/Redis/gi' \
+  -e 's/aws/AWS/gi' \
+  -e 's/a w s/AWS/gi' \
+  -e 's/amazon web services/AWS/gi' \
+  -e 's/gcp/GCP/gi' \
+  -e 's/g c p/GCP/gi' \
+  -e 's/google cloud/Google Cloud/gi' \
+  -e 's/azure/Azure/gi' \
+  -e 's/u v/uv/gi' \
+  -e 's/pip install/pip install/g' \
+  -e 's/npm/npm/g' \
+  -e 's/n p m/npm/gi' \
+  -e 's/yarn/yarn/g' \
+  -e 's/brew/brew/g' \
+  -e 's/home brew/Homebrew/gi' \
+  -e 's/homebrew/Homebrew/gi' \
+  -e 's/mac o s/macOS/gi' \
+  -e 's/macos/macOS/gi' \
+  -e 's/mac os/macOS/gi' \
+  -e 's/i o s/iOS/gi' \
+  -e 's/ios/iOS/gi' \
+  -e 's/linux/Linux/gi' \
+  -e 's/ubuntu/Ubuntu/gi' \
+  -e 's/debian/Debian/gi' \
+  -e 's/windows/Windows/gi' \
+  -e 's/newton/Newton/gi' \
+  -e 's/newtons/Newtons/gi' \
+  -e 's/joule/Joule/gi' \
+  -e 's/joules/Joules/gi' \
+  -e 's/kelvin/Kelvin/gi' \
+  -e 's/celsius/Celsius/gi' \
+  -e 's/fahrenheit/Fahrenheit/gi' \
+  -e 's/coulomb/Coulomb/gi' \
+  -e 's/coulombs/Coulombs/gi' \
+  -e 's/ampere/Ampere/gi' \
+  -e 's/amperes/Amperes/gi' \
+  -e 's/volt/Volt/gi' \
+  -e 's/volts/Volts/gi' \
+  -e 's/ohm/Ohm/gi' \
+  -e 's/ohms/Ohms/gi' \
+  -e 's/hertz/Hertz/gi' \
+  -e 's/watt/Watt/gi' \
+  -e 's/watts/Watts/gi' \
+  -e 's/pascal/Pascal/gi' \
+  -e 's/pascals/Pascals/gi' \
+  -e 's/farad/Farad/gi' \
+  -e 's/farads/Farads/gi' \
+  -e 's/henry/Henry/gi' \
+  -e 's/henries/Henries/gi' \
+  -e 's/tesla/Tesla/gi' \
+  -e 's/teslas/Teslas/gi' \
+  -e 's/weber/Weber/gi' \
+  -e 's/webers/Webers/gi' \
+  -e 's/kinematics/kinematics/gi' \
+  -e 's/kinetic energy/kinetic energy/gi' \
+  -e 's/potential energy/potential energy/gi' \
+  -e 's/thermodynamics/thermodynamics/gi' \
+  -e 's/electromagnetism/electromagnetism/gi' \
+  -e 's/quantum mechanics/quantum mechanics/gi' \
+  -e 's/special relativity/special relativity/gi' \
+  -e 's/general relativity/general relativity/gi' \
+  -e 's/schrodinger/Schrodinger/gi' \
+  -e 's/heisenberg/Heisenberg/gi' \
+  -e 's/planck/Planck/gi' \
+  -e 's/boltzmann/Boltzmann/gi' \
+  -e 's/avogadro/Avogadro/gi' \
+  -e 's/faraday/Faraday/gi' \
+  -e 's/gauss/Gauss/gi' \
+  -e 's/maxwell/Maxwell/gi' \
+  -e 's/lorentz/Lorentz/gi' \
+  -e 's/doppler/Doppler/gi' \
+  -e 's/bernoulli/Bernoulli/gi' \
+  -e 's/archimedes/Archimedes/gi' \
+  -e 's/def /def /g' \
+  -e 's/class /class /g' \
+  -e 's/import /import /g' \
+  -e 's/from /from /g' \
+  -e 's/return /return /g' \
+  -e 's/if /if /g' \
+  -e 's/else /else /g' \
+  -e 's/elif /elif /g' \
+  -e 's/for /for /g' \
+  -e 's/while /while /g' \
+  -e 's/try /try /g' \
+  -e 's/except /except /g' \
+  -e 's/finally /finally /g' \
+  -e 's/with /with /g' \
+  -e 's/async /async /g' \
+  -e 's/await /await /g' \
+  -e 's/lambda /lambda /g' \
+  -e 's/self\./self./g' \
+  -e 's/self /self /g' \
+  -e 's/__init__/__init__/g' \
+  -e 's/__main__/__main__/g' \
+  -e 's/__name__/__name__/g' \
+  -e 's/true/True/g' \
+  -e 's/false/False/g' \
+  -e 's/none/None/g' \
+  -e 's/null/null/g' \
+  -e 's/undefined/undefined/g' \
+  -e 's/const /const /g' \
+  -e 's/let /let /g' \
+  -e 's/var /var /g' \
+  -e 's/function /function /g' \
+  -e 's/arrow function/arrow function/gi' \
+  -e 's/console dot log/console.log/gi' \
+  -e 's/console log/console.log/gi' \
+  -e 's/print statement/print statement/gi' \
+  -e 's/f string/f-string/gi' \
+  -e 's/format string/format string/gi' \
+  -e 's/list comprehension/list comprehension/gi' \
+  -e 's/dict comprehension/dict comprehension/gi' \
+  -e 's/set comprehension/set comprehension/gi' \
+  -e 's/generator expression/generator expression/gi' \
+  -e 's/decorator/decorator/gi' \
+  -e 's/at sign/@/gi' \
+  -e 's/and T Mux/in tmux/gi' \
+  -e 's/and T mux/in tmux/gi' \
+  -e 's/T Mux/tmux/gi' \
+  -e 's/T mux/tmux/gi' \
+  -e 's/tee mux/tmux/gi' \
+  -e 's/Chalk torque/chalktalk/gi' \
+  -e 's/chalk torque/chalktalk/gi' \
+  -e 's/Chalk Torque/chalktalk/gi'
