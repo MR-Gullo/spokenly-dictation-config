@@ -64,18 +64,127 @@ cat | sed \
   -e 's/rest api/REST API/gi' \
   -e 's/graphql/GraphQL/gi' \
   -e 's/graph q l/GraphQL/gi' \
+  # === AI MODELS (auto-generated) ===
+  # Companies
+  -e 's/and tropic/Anthropic/gi' \
+  -e 's/an tropic/Anthropic/gi' \
+  -e 's/co here/Cohere/gi' \
+  -e 's/co hear/Cohere/gi' \
+  -e 's/fireworks a i/Fireworks AI/gi' \
+  -e 's/google deep mind/Google DeepMind/gi' \
+  -e 's/deep mind/Google DeepMind/gi' \
   -e 's/grok/Groq/gi' \
   -e 's/grow q/Groq/gi' \
-  -e 's/quinn/Qwen/gi' \
-  -e 's/qwen/Qwen/gi' \
-  -e 's/kwen/Qwen/gi' \
-  -e 's/llama/Llama/gi' \
-  -e 's/lama/Llama/gi' \
-  -e 's/mistral/Mistral/gi' \
-  -e 's/gemini/Gemini/gi' \
-  -e 's/anthropic/Anthropic/gi' \
+  -e 's/grock/Groq/gi' \
+  -e 's/huggingface/Hugging Face/gi' \
+  -e 's/hugging fase/Hugging Face/gi' \
+  -e 's/meta a i/Meta AI/gi' \
+  -e 's/mist roll ai/Mistral AI/gi' \
+  -e 's/miss trial ai/Mistral AI/gi' \
   -e 's/open ai/OpenAI/gi' \
-  -e 's/openai/OpenAI/gi' \
+  -e 's/open a i/OpenAI/gi' \
+  -e 's/per plexity/Perplexity/gi' \
+  -e 's/rep lick ate/Replicate/gi' \
+  -e 's/together a i/Together AI/gi' \
+  # Models
+  -e 's/clawed/Claude/gi' \
+  -e 's/cloud/Claude/gi' \
+  -e 's/claud/Claude/gi' \
+  -e 's/claw'd/Claude/gi' \
+  -e 's/clawed haiku/Claude Haiku/gi' \
+  -e 's/cloud haiku/Claude Haiku/gi' \
+  -e 's/claude hi coo/Claude Haiku/gi' \
+  -e 's/clawed opus/Claude Opus/gi' \
+  -e 's/cloud opus/Claude Opus/gi' \
+  -e 's/claude opas/Claude Opus/gi' \
+  -e 's/clawed sonnet/Claude Sonnet/gi' \
+  -e 's/cloud sonnet/Claude Sonnet/gi' \
+  -e 's/claude sonic/Claude Sonnet/gi' \
+  -e 's/code stroll/Codestral/gi' \
+  -e 's/code astral/Codestral/gi' \
+  -e 's/command are/Command R/gi' \
+  -e 's/commando r/Command R/gi' \
+  -e 's/command r plus/Command R+/gi' \
+  -e 's/command are plus/Command R+/gi' \
+  -e 's/dolly/DALL-E/gi' \
+  -e 's/dall e/DALL-E/gi' \
+  -e 's/doll e/DALL-E/gi' \
+  -e 's/dolly e/DALL-E/gi' \
+  -e 's/d b r x/DBRX/gi' \
+  -e 's/dee bee are ex/DBRX/gi' \
+  -e 's/deep seek/DeepSeek/gi' \
+  -e 's/deep sec/DeepSeek/gi' \
+  -e 's/deepseak/DeepSeek/gi' \
+  -e 's/deep seak/DeepSeek/gi' \
+  -e 's/deep seek r1/DeepSeek-R1/gi' \
+  -e 's/deep seek are one/DeepSeek-R1/gi' \
+  -e 's/deepseak r1/DeepSeek-R1/gi' \
+  -e 's/deep seek v3/DeepSeek-V3/gi' \
+  -e 's/deep seek v 3/DeepSeek-V3/gi' \
+  -e 's/deepseak v3/DeepSeek-V3/gi' \
+  -e 's/eleven labs/ElevenLabs/gi' \
+  -e 's/11 labs/ElevenLabs/gi' \
+  -e 's/flucks/FLUX/gi' \
+  -e 's/gpt 4/GPT-4/gi' \
+  -e 's/g p t 4/GPT-4/gi' \
+  -e 's/gpt four/GPT-4/gi' \
+  -e 's/g p t four/GPT-4/gi' \
+  -e 's/gpt 4 o/GPT-4o/gi' \
+  -e 's/g p t 4 o/GPT-4o/gi' \
+  -e 's/gpt four oh/GPT-4o/gi' \
+  -e 's/gpt 4 o mini/GPT-4o mini/gi' \
+  -e 's/gpt four oh mini/GPT-4o mini/gi' \
+  -e 's/gem in eye/Gemini/gi' \
+  -e 's/gem any/Gemini/gi' \
+  -e 's/gem in eye flash/Gemini Flash/gi' \
+  -e 's/gem in eye pro/Gemini Pro/gi' \
+  -e 's/gem in eye ultra/Gemini Ultra/gi' \
+  -e 's/grow k/Grok/gi' \
+  -e 's/grock/Grok/gi' \
+  -e 's/cling/Kling/gi' \
+  -e 's/klink/Kling/gi' \
+  -e 's/lama/Llama/gi' \
+  -e 's/yama/Llama/gi' \
+  -e 's/lama 3/Llama 3/gi' \
+  -e 's/llama three/Llama 3/gi' \
+  -e 's/lama 3.3/Llama 3.3/gi' \
+  -e 's/llama three point three/Llama 3.3/gi' \
+  -e 's/mid journey/Midjourney/gi' \
+  -e 's/mid jerky/Midjourney/gi' \
+  -e 's/mist roll/Mistral/gi' \
+  -e 's/miss trial/Mistral/gi' \
+  -e 's/mist real/Mistral/gi' \
+  -e 's/mist roll large/Mistral Large/gi' \
+  -e 's/mix troll/Mixtral/gi' \
+  -e 's/mixed roll/Mixtral/gi' \
+  -e 's/fee 4/Phi-4/gi' \
+  -e 's/fie 4/Phi-4/gi' \
+  -e 's/phi 4/Phi-4/gi' \
+  -e 's/phi four/Phi-4/gi' \
+  -e 's/fee four/Phi-4/gi' \
+  -e 's/quinn/Qwen/gi' \
+  -e 's/kwen/Qwen/gi' \
+  -e 's/queen/Qwen/gi' \
+  -e 's/quinn 2.5/Qwen 2.5/gi' \
+  -e 's/kwen two point five/Qwen 2.5/gi' \
+  -e 's/run way/Runway/gi' \
+  -e 's/so ra/Sora/gi' \
+  -e 's/soar a/Sora/gi' \
+  -e 's/stable de fusion/Stable Diffusion/gi' \
+  -e 's/wisper/Whisper/gi' \
+  -e 's/oh one/o1/gi' \
+  -e 's/o one/o1/gi' \
+  -e 's/oh 1/o1/gi' \
+  -e 's/oh one mini/o1-mini/gi' \
+  -e 's/o one mini/o1-mini/gi' \
+  -e 's/oh one pro/o1-pro/gi' \
+  -e 's/o one pro/o1-pro/gi' \
+  -e 's/oh three/o3/gi' \
+  -e 's/o three/o3/gi' \
+  -e 's/oh 3/o3/gi' \
+  -e 's/oh three mini/o3-mini/gi' \
+  -e 's/o three mini/o3-mini/gi' \
+  # === END AI MODELS ===
   -e 's/sql/SQL/gi' \
   -e 's/s q l/SQL/gi' \
   -e 's/my sequel/MySQL/gi' \
