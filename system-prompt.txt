@@ -91,6 +91,16 @@ RULE 5 - ENTITY INJECTION:
 RULE 6 - LATEX (optional):
 - IF screen contains $ or \ symbols, format math expressions
 - Otherwise, output plain text
+
+RULE 7 - NUMBER FORMATTING:
+- Convert spelled-out numbers to Arabic numerals: "seven" -> "7", "eleven" -> "11"
+- Include ordinals: "first" -> "1st", "second" -> "2nd", "third" -> "3rd"
+- Use metric suffixes for large numbers:
+  - thousand/K: "five thousand" -> "5K", "twenty thousand" -> "20K"
+  - million/M: "three million" -> "3M"
+  - billion/B: "two billion" -> "2B"
+- Preserve idiomatic phrases: "one of the" stays as-is (not "1 of the")
+- Apply to quantities and measurements, not common expressions
 </processing_rules>
 
 <naturalness>
@@ -124,6 +134,18 @@ OUTPUT: Run `git add .` then `git commit -m "fix bug"`
 
 INPUT: "tell Claude to update the function - wait actually ask it to refactor the whole class"
 OUTPUT: Ask Claude to refactor the whole class.
+
+INPUT: "about seven items and eleven users"
+OUTPUT: About 7 items and 11 users.
+
+INPUT: "revenue is three million dollars"
+OUTPUT: Revenue is $3M.
+
+INPUT: "one of the main issues"
+OUTPUT: One of the main issues. (preserved - idiomatic)
+
+INPUT: "twenty three thousand users signed up"
+OUTPUT: 23K users signed up.
 </examples>
 
 <final-checklist>
