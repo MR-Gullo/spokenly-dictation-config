@@ -1,6 +1,7 @@
 {
   "_comment": "AI model phonetic corrections. Key = correct name, values = common mishearings",
-  "_usage": "Run: python generate-model-sed.py to regenerate the AI Models section in pre-ai.sh",
+  "_usage": "Run: python generate-model-sed.py --apply to regenerate the AI Models section in pre-ai.sh",
+  "_updated": "2026-02-01 from Artificial Analysis leaderboard",
 
   "companies": {
     "Anthropic": ["anthropic", "and tropic", "an tropic"],
@@ -14,43 +15,187 @@
     "Fireworks AI": ["fireworks ai", "fireworks a i"],
     "Perplexity": ["perplexity", "per plexity"],
     "Replicate": ["replicate", "rep lick ate"],
-    "Hugging Face": ["hugging face", "huggingface", "hugging fase"]
+    "Hugging Face": ["hugging face", "huggingface", "hugging fase"],
+    "xAI": ["x ai", "x a i", "ex ai"],
+    "Amazon": ["amazon", "amazin"],
+    "Alibaba": ["alibaba", "ali baba"],
+    "Baidu": ["baidu", "by do", "bye do"],
+    "ByteDance": ["bytedance", "bite dance", "byte dance"],
+    "Z AI": ["z ai", "zee ai", "z a i"],
+    "Kimi": ["kimi", "kim e", "kimmy"],
+    "MiniMax": ["minimax", "mini max"],
+    "NVIDIA": ["nvidia", "in video", "n video"],
+    "IBM": ["ibm", "i b m"],
+    "AI21 Labs": ["ai 21 labs", "ai twenty one labs", "a i 21 labs"],
+    "Nous Research": ["nous research", "noose research", "news research"],
+    "Allen Institute": ["allen institute", "alan institute"],
+    "LG AI Research": ["lg ai research", "l g ai research"],
+    "TII UAE": ["tii uae", "t i i uae", "tii"],
+    "Upstage": ["upstage", "up stage"],
+    "Reka AI": ["reka ai", "reka a i", "reeka ai"],
+    "StepFun": ["stepfun", "step fun", "step phone"],
+    "InclusionAI": ["inclusion ai", "inclusion a i"],
+    "ServiceNow": ["servicenow", "service now"],
+    "Xiaomi": ["xiaomi", "show me", "zhow me"],
+    "Korea Telecom": ["korea telecom", "kt"],
+    "KwaiKAT": ["kwai kat", "k why kat"],
+    "MBZUAI": ["mbzuai", "m b z u a i"],
+    "Liquid AI": ["liquid ai", "liquid a i"],
+    "Prime Intellect": ["prime intellect", "prime intel act"],
+    "Deep Cogito": ["deep cogito", "deep cog e toe"],
+    "Naver": ["naver", "nay ver"],
+    "Motif Technologies": ["motif technologies", "motif tech"]
   },
 
   "models": {
     "Claude": ["clawed", "cloud", "claud", "claw'd"],
     "Claude Opus": ["clawed opus", "cloud opus", "claude opas"],
+    "Claude Opus 4.5": ["clawed opus 4.5", "cloud opus 4.5", "claude opas four point five"],
     "Claude Sonnet": ["clawed sonnet", "cloud sonnet", "claude sonic"],
+    "Claude 4.5 Sonnet": ["clawed 4.5 sonnet", "cloud 4.5 sonnet", "claude four point five sonnet"],
     "Claude Haiku": ["clawed haiku", "cloud haiku", "claude hi coo"],
+    "Claude 4.5 Haiku": ["clawed 4.5 haiku", "cloud 4.5 haiku", "claude four point five haiku"],
+
     "GPT-4": ["gpt 4", "g p t 4", "gpt four", "g p t four"],
     "GPT-4o": ["gpt 4 o", "g p t 4 o", "gpt four oh"],
     "GPT-4o mini": ["gpt 4 o mini", "gpt four oh mini"],
+    "GPT-5": ["gpt 5", "g p t 5", "gpt five", "g p t five"],
+    "GPT-5 mini": ["gpt 5 mini", "gpt five mini"],
+    "GPT-5 nano": ["gpt 5 nano", "gpt five nano"],
+    "GPT-5.1": ["gpt 5.1", "gpt five point one"],
+    "GPT-5.1 Codex": ["gpt 5.1 codex", "gpt five point one codex"],
+    "GPT-5.2": ["gpt 5.2", "gpt five point two"],
+    "GPT-5.2 Codex": ["gpt 5.2 codex", "gpt five point two codex"],
+
     "o1": ["oh one", "o one", "oh 1"],
     "o1-mini": ["oh one mini", "o one mini"],
     "o1-pro": ["oh one pro", "o one pro"],
     "o3": ["oh three", "o three", "oh 3"],
     "o3-mini": ["oh three mini", "o three mini"],
+    "o3-pro": ["oh three pro", "o three pro"],
+    "o4-mini": ["oh four mini", "o four mini"],
+
     "Gemini": ["gemini", "gem in eye", "gem any"],
     "Gemini Pro": ["gemini pro", "gem in eye pro"],
     "Gemini Ultra": ["gemini ultra", "gem in eye ultra"],
     "Gemini Flash": ["gemini flash", "gem in eye flash"],
+    "Gemini 2.5": ["gemini 2.5", "gemini two point five"],
+    "Gemini 2.5 Pro": ["gemini 2.5 pro", "gemini two point five pro"],
+    "Gemini 2.5 Flash": ["gemini 2.5 flash", "gemini two point five flash"],
+    "Gemini 3 Flash": ["gemini 3 flash", "gemini three flash"],
+    "Gemini 3 Pro": ["gemini 3 pro", "gemini three pro"],
+
     "Llama": ["llama", "lama", "yama"],
     "Llama 3": ["llama 3", "lama 3", "llama three"],
     "Llama 3.3": ["llama 3.3", "lama 3.3", "llama three point three"],
+    "Llama 4": ["llama 4", "lama 4", "llama four"],
+    "Llama 4 Maverick": ["llama 4 maverick", "lama four maverick"],
+    "Llama 4 Scout": ["llama 4 scout", "lama four scout"],
+    "Llama 4 Behemoth": ["llama 4 behemoth", "lama four behemoth"],
+
     "Mistral": ["mistral", "mist roll", "miss trial", "mist real"],
     "Mistral Large": ["mistral large", "mist roll large"],
+    "Mistral Medium": ["mistral medium", "mist roll medium"],
+    "Mistral Small": ["mistral small", "mist roll small"],
     "Mixtral": ["mixtral", "mix troll", "mixed roll"],
     "Codestral": ["codestral", "code stroll", "code astral"],
+    "Devstral": ["devstral", "dev stroll", "dev astral"],
+    "Magistral": ["magistral", "magic stroll", "majestral"],
+    "Ministral": ["ministral", "mini stroll", "minister all"],
+    "Pixtral": ["pixtral", "pick stroll", "pix troll"],
+
     "Qwen": ["quinn", "qwen", "kwen", "queen"],
     "Qwen 2.5": ["quinn 2.5", "qwen 2.5", "kwen two point five"],
+    "Qwen3": ["quinn 3", "qwen 3", "kwen three"],
+    "Qwen3 Max": ["quinn 3 max", "qwen three max"],
+    "QwQ": ["q w q", "cue double u cue", "kwok"],
+
     "DeepSeek": ["deep seek", "deep sec", "deepseak", "deep seak"],
     "DeepSeek-R1": ["deep seek r1", "deep seek are one", "deepseak r1"],
     "DeepSeek-V3": ["deep seek v3", "deep seek v 3", "deepseak v3"],
+    "DeepSeek V3.2": ["deep seek v 3.2", "deepseak v three point two"],
+
+    "Grok": ["grok", "grow k", "grock"],
+    "Grok 2": ["grok 2", "grok two"],
+    "Grok 3": ["grok 3", "grok three"],
+    "Grok 3 mini": ["grok 3 mini", "grok three mini"],
+    "Grok 4": ["grok 4", "grok four"],
+    "Grok 4 Fast": ["grok 4 fast", "grok four fast"],
+    "Grok 4.1": ["grok 4.1", "grok four point one"],
+
+    "Nova": ["nova", "no va"],
+    "Nova 2.0": ["nova 2.0", "nova two point oh"],
+    "Nova Premier": ["nova premier", "nova pre mere"],
+    "Nova Pro": ["nova pro"],
+    "Nova Lite": ["nova lite", "nova light"],
+    "Nova Micro": ["nova micro"],
+
+    "GLM-4": ["glm 4", "g l m 4", "glm four"],
+    "GLM-4.5": ["glm 4.5", "glm four point five"],
+    "GLM-4.6": ["glm 4.6", "glm four point six"],
+    "GLM-4.7": ["glm 4.7", "glm four point seven"],
+
+    "Kimi K2": ["kimi k2", "kimmy k2", "kimi k two"],
+    "Kimi K2.5": ["kimi k 2.5", "kimmy k two point five"],
+
+    "ERNIE": ["ernie", "earn e", "er knee"],
+    "ERNIE 4.5": ["ernie 4.5", "ernie four point five"],
+    "ERNIE 5.0": ["ernie 5", "ernie five"],
+
+    "Doubao": ["doubao", "do bao", "dough bao"],
+    "Seed": ["seed", "cede"],
+
     "Phi-4": ["fee 4", "fie 4", "phi 4", "phi four", "fee four"],
+    "Phi-4 Mini": ["fee 4 mini", "phi four mini"],
+
     "Command R": ["command r", "command are", "commando r"],
     "Command R+": ["command r plus", "command are plus"],
+    "Command A": ["command a", "command ay"],
+
+    "Jamba": ["jamba", "jam ba"],
+
+    "Nemotron": ["nemotron", "nemo tron", "knee mo tron"],
+    "Nemotron Ultra": ["nemotron ultra"],
+    "Nemotron Nano": ["nemotron nano"],
+
+    "Granite": ["granite", "gran it"],
+    "Granite 4.0": ["granite 4", "granite four"],
+
+    "Hermes": ["hermes", "her meez", "hermies"],
+    "Hermes 4": ["hermes 4", "hermes four"],
+
+    "EXAONE": ["exaone", "exa one", "ex a one"],
+    "K-EXAONE": ["k exaone", "k exa one"],
+
+    "Olmo": ["olmo", "ol mo", "elmo"],
+
+    "Falcon": ["falcon", "fal con"],
+
+    "Solar": ["solar", "so lar"],
+    "Solar Pro": ["solar pro"],
+
+    "Reka": ["reka", "reeka", "wrecker"],
+    "Reka Flash": ["reka flash", "reeka flash"],
+
+    "Step": ["step"],
+    "Step3": ["step 3", "step three"],
+
+    "Ring": ["ring"],
+    "Ling": ["ling"],
+
+    "MiMo": ["mimo", "me mo", "my mo"],
+
+    "Mercury": ["mercury", "mer curry"],
+
+    "LFM": ["lfm", "l f m"],
+
+    "Cogito": ["cogito", "cog e toe"],
+
+    "HyperCLOVA": ["hyper clova", "hyperclova"],
+
+    "INTELLECT": ["intellect", "intel lect"],
+
     "DBRX": ["d b r x", "dee bee are ex", "dbrx"],
-    "Grok": ["grok", "grow k", "grock"],
     "Stable Diffusion": ["stable diffusion", "stable de fusion"],
     "DALL-E": ["dolly", "dall e", "doll e", "dolly e"],
     "Midjourney": ["mid journey", "midjourney", "mid jerky"],
@@ -68,14 +213,21 @@
     "claude-sonnet-4-20250514": "Claude Sonnet 4",
     "gpt-4o": "GPT-4o",
     "gpt-4o-mini": "GPT-4o mini",
+    "gpt-5": "GPT-5",
+    "gpt-5.2": "GPT-5.2",
     "o1": "o1",
     "o1-mini": "o1-mini",
+    "o3": "o3",
     "o3-mini": "o3-mini",
-    "gemini-2.0-flash": "Gemini 2.0 Flash",
-    "gemini-1.5-pro": "Gemini 1.5 Pro",
+    "gemini-2.5-pro": "Gemini 2.5 Pro",
+    "gemini-2.5-flash": "Gemini 2.5 Flash",
+    "gemini-3-flash": "Gemini 3 Flash",
     "llama-3.3-70b": "Llama 3.3 70B",
+    "llama-4-maverick": "Llama 4 Maverick",
     "mistral-large-latest": "Mistral Large",
     "deepseek-r1": "DeepSeek-R1",
-    "qwen2.5-72b": "Qwen 2.5 72B"
+    "deepseek-v3.2": "DeepSeek V3.2",
+    "qwen3-max": "Qwen3 Max",
+    "grok-4": "Grok 4"
   }
 }

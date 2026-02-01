@@ -66,10 +66,21 @@ cat | sed \
   -e 's/graph q l/GraphQL/gi' \
   # === AI MODELS (auto-generated) ===
   # Companies
+  -e 's/ai 21 labs/AI21 Labs/gi' \
+  -e 's/ai twenty one labs/AI21 Labs/gi' \
+  -e 's/a i 21 labs/AI21 Labs/gi' \
+  -e 's/ali baba/Alibaba/gi' \
+  -e 's/alan institute/Allen Institute/gi' \
+  -e 's/amazin/Amazon/gi' \
   -e 's/and tropic/Anthropic/gi' \
   -e 's/an tropic/Anthropic/gi' \
+  -e 's/by do/Baidu/gi' \
+  -e 's/bye do/Baidu/gi' \
+  -e 's/bite dance/ByteDance/gi' \
+  -e 's/byte dance/ByteDance/gi' \
   -e 's/co here/Cohere/gi' \
   -e 's/co hear/Cohere/gi' \
+  -e 's/deep cog e toe/Deep Cogito/gi' \
   -e 's/fireworks a i/Fireworks AI/gi' \
   -e 's/google deep mind/Google DeepMind/gi' \
   -e 's/deep mind/Google DeepMind/gi' \
@@ -78,30 +89,75 @@ cat | sed \
   -e 's/grock/Groq/gi' \
   -e 's/huggingface/Hugging Face/gi' \
   -e 's/hugging fase/Hugging Face/gi' \
+  -e 's/i b m/IBM/gi' \
+  -e 's/inclusion ai/InclusionAI/gi' \
+  -e 's/inclusion a i/InclusionAI/gi' \
+  -e 's/kim e/Kimi/gi' \
+  -e 's/kimmy/Kimi/gi' \
+  -e 's/kt/Korea Telecom/gi' \
+  -e 's/kwai kat/KwaiKAT/gi' \
+  -e 's/k why kat/KwaiKAT/gi' \
+  -e 's/l g ai research/LG AI Research/gi' \
+  -e 's/liquid a i/Liquid AI/gi' \
+  -e 's/m b z u a i/MBZUAI/gi' \
   -e 's/meta a i/Meta AI/gi' \
+  -e 's/mini max/MiniMax/gi' \
   -e 's/mist roll ai/Mistral AI/gi' \
   -e 's/miss trial ai/Mistral AI/gi' \
+  -e 's/motif tech/Motif Technologies/gi' \
+  -e 's/in video/NVIDIA/gi' \
+  -e 's/n video/NVIDIA/gi' \
+  -e 's/nay ver/Naver/gi' \
+  -e 's/noose research/Nous Research/gi' \
+  -e 's/news research/Nous Research/gi' \
   -e 's/open ai/OpenAI/gi' \
   -e 's/open a i/OpenAI/gi' \
   -e 's/per plexity/Perplexity/gi' \
+  -e 's/prime intel act/Prime Intellect/gi' \
+  -e 's/reka a i/Reka AI/gi' \
+  -e 's/reeka ai/Reka AI/gi' \
   -e 's/rep lick ate/Replicate/gi' \
+  -e 's/service now/ServiceNow/gi' \
+  -e 's/step fun/StepFun/gi' \
+  -e 's/step phone/StepFun/gi' \
+  -e 's/t i i uae/TII UAE/gi' \
+  -e 's/tii/TII UAE/gi' \
   -e 's/together a i/Together AI/gi' \
+  -e 's/up stage/Upstage/gi' \
+  -e 's/show me/Xiaomi/gi' \
+  -e 's/zhow me/Xiaomi/gi' \
+  -e 's/zee ai/Z AI/gi' \
+  -e 's/z a i/Z AI/gi' \
+  -e 's/x ai/xAI/gi' \
+  -e 's/x a i/xAI/gi' \
+  -e 's/ex ai/xAI/gi' \
   # Models
   -e 's/clawed/Claude/gi' \
   -e 's/cloud/Claude/gi' \
   -e 's/claud/Claude/gi' \
   -e 's/claw'd/Claude/gi' \
+  -e 's/clawed 4.5 haiku/Claude 4.5 Haiku/gi' \
+  -e 's/cloud 4.5 haiku/Claude 4.5 Haiku/gi' \
+  -e 's/claude four point five haiku/Claude 4.5 Haiku/gi' \
+  -e 's/clawed 4.5 sonnet/Claude 4.5 Sonnet/gi' \
+  -e 's/cloud 4.5 sonnet/Claude 4.5 Sonnet/gi' \
+  -e 's/claude four point five sonnet/Claude 4.5 Sonnet/gi' \
   -e 's/clawed haiku/Claude Haiku/gi' \
   -e 's/cloud haiku/Claude Haiku/gi' \
   -e 's/claude hi coo/Claude Haiku/gi' \
   -e 's/clawed opus/Claude Opus/gi' \
   -e 's/cloud opus/Claude Opus/gi' \
   -e 's/claude opas/Claude Opus/gi' \
+  -e 's/clawed opus 4.5/Claude Opus 4.5/gi' \
+  -e 's/cloud opus 4.5/Claude Opus 4.5/gi' \
+  -e 's/claude opas four point five/Claude Opus 4.5/gi' \
   -e 's/clawed sonnet/Claude Sonnet/gi' \
   -e 's/cloud sonnet/Claude Sonnet/gi' \
   -e 's/claude sonic/Claude Sonnet/gi' \
   -e 's/code stroll/Codestral/gi' \
   -e 's/code astral/Codestral/gi' \
+  -e 's/cog e toe/Cogito/gi' \
+  -e 's/command ay/Command A/gi' \
   -e 's/command are/Command R/gi' \
   -e 's/commando r/Command R/gi' \
   -e 's/command r plus/Command R+/gi' \
@@ -116,15 +172,38 @@ cat | sed \
   -e 's/deep sec/DeepSeek/gi' \
   -e 's/deepseak/DeepSeek/gi' \
   -e 's/deep seak/DeepSeek/gi' \
+  -e 's/deep seek v 3.2/DeepSeek V3.2/gi' \
+  -e 's/deepseak v three point two/DeepSeek V3.2/gi' \
   -e 's/deep seek r1/DeepSeek-R1/gi' \
   -e 's/deep seek are one/DeepSeek-R1/gi' \
   -e 's/deepseak r1/DeepSeek-R1/gi' \
   -e 's/deep seek v3/DeepSeek-V3/gi' \
   -e 's/deep seek v 3/DeepSeek-V3/gi' \
   -e 's/deepseak v3/DeepSeek-V3/gi' \
+  -e 's/dev stroll/Devstral/gi' \
+  -e 's/dev astral/Devstral/gi' \
+  -e 's/do bao/Doubao/gi' \
+  -e 's/dough bao/Doubao/gi' \
+  -e 's/earn e/ERNIE/gi' \
+  -e 's/er knee/ERNIE/gi' \
+  -e 's/ernie four point five/ERNIE 4.5/gi' \
+  -e 's/ernie 5/ERNIE 5.0/gi' \
+  -e 's/ernie five/ERNIE 5.0/gi' \
+  -e 's/exa one/EXAONE/gi' \
+  -e 's/ex a one/EXAONE/gi' \
   -e 's/eleven labs/ElevenLabs/gi' \
   -e 's/11 labs/ElevenLabs/gi' \
   -e 's/flucks/FLUX/gi' \
+  -e 's/fal con/Falcon/gi' \
+  -e 's/glm 4/GLM-4/gi' \
+  -e 's/g l m 4/GLM-4/gi' \
+  -e 's/glm four/GLM-4/gi' \
+  -e 's/glm 4.5/GLM-4.5/gi' \
+  -e 's/glm four point five/GLM-4.5/gi' \
+  -e 's/glm 4.6/GLM-4.6/gi' \
+  -e 's/glm four point six/GLM-4.6/gi' \
+  -e 's/glm 4.7/GLM-4.7/gi' \
+  -e 's/glm four point seven/GLM-4.7/gi' \
   -e 's/gpt 4/GPT-4/gi' \
   -e 's/g p t 4/GPT-4/gi' \
   -e 's/gpt four/GPT-4/gi' \
@@ -134,43 +213,127 @@ cat | sed \
   -e 's/gpt four oh/GPT-4o/gi' \
   -e 's/gpt 4 o mini/GPT-4o mini/gi' \
   -e 's/gpt four oh mini/GPT-4o mini/gi' \
+  -e 's/gpt 5/GPT-5/gi' \
+  -e 's/g p t 5/GPT-5/gi' \
+  -e 's/gpt five/GPT-5/gi' \
+  -e 's/g p t five/GPT-5/gi' \
+  -e 's/gpt 5 mini/GPT-5 mini/gi' \
+  -e 's/gpt five mini/GPT-5 mini/gi' \
+  -e 's/gpt 5 nano/GPT-5 nano/gi' \
+  -e 's/gpt five nano/GPT-5 nano/gi' \
+  -e 's/gpt 5.1/GPT-5.1/gi' \
+  -e 's/gpt five point one/GPT-5.1/gi' \
+  -e 's/gpt 5.1 codex/GPT-5.1 Codex/gi' \
+  -e 's/gpt five point one codex/GPT-5.1 Codex/gi' \
+  -e 's/gpt 5.2/GPT-5.2/gi' \
+  -e 's/gpt five point two/GPT-5.2/gi' \
+  -e 's/gpt 5.2 codex/GPT-5.2 Codex/gi' \
+  -e 's/gpt five point two codex/GPT-5.2 Codex/gi' \
   -e 's/gem in eye/Gemini/gi' \
   -e 's/gem any/Gemini/gi' \
+  -e 's/gemini two point five/Gemini 2.5/gi' \
+  -e 's/gemini two point five flash/Gemini 2.5 Flash/gi' \
+  -e 's/gemini two point five pro/Gemini 2.5 Pro/gi' \
+  -e 's/gemini three flash/Gemini 3 Flash/gi' \
+  -e 's/gemini three pro/Gemini 3 Pro/gi' \
   -e 's/gem in eye flash/Gemini Flash/gi' \
   -e 's/gem in eye pro/Gemini Pro/gi' \
   -e 's/gem in eye ultra/Gemini Ultra/gi' \
+  -e 's/gran it/Granite/gi' \
+  -e 's/granite 4/Granite 4.0/gi' \
+  -e 's/granite four/Granite 4.0/gi' \
   -e 's/grow k/Grok/gi' \
   -e 's/grock/Grok/gi' \
+  -e 's/grok two/Grok 2/gi' \
+  -e 's/grok three/Grok 3/gi' \
+  -e 's/grok three mini/Grok 3 mini/gi' \
+  -e 's/grok four/Grok 4/gi' \
+  -e 's/grok four fast/Grok 4 Fast/gi' \
+  -e 's/grok four point one/Grok 4.1/gi' \
+  -e 's/her meez/Hermes/gi' \
+  -e 's/hermies/Hermes/gi' \
+  -e 's/hermes four/Hermes 4/gi' \
+  -e 's/hyper clova/HyperCLOVA/gi' \
+  -e 's/intel lect/INTELLECT/gi' \
+  -e 's/jam ba/Jamba/gi' \
+  -e 's/k exaone/K-EXAONE/gi' \
+  -e 's/k exa one/K-EXAONE/gi' \
+  -e 's/kimmy k2/Kimi K2/gi' \
+  -e 's/kimi k two/Kimi K2/gi' \
+  -e 's/kimi k 2.5/Kimi K2.5/gi' \
+  -e 's/kimmy k two point five/Kimi K2.5/gi' \
   -e 's/cling/Kling/gi' \
   -e 's/klink/Kling/gi' \
+  -e 's/l f m/LFM/gi' \
   -e 's/lama/Llama/gi' \
   -e 's/yama/Llama/gi' \
   -e 's/lama 3/Llama 3/gi' \
   -e 's/llama three/Llama 3/gi' \
   -e 's/lama 3.3/Llama 3.3/gi' \
   -e 's/llama three point three/Llama 3.3/gi' \
+  -e 's/lama 4/Llama 4/gi' \
+  -e 's/llama four/Llama 4/gi' \
+  -e 's/lama four behemoth/Llama 4 Behemoth/gi' \
+  -e 's/lama four maverick/Llama 4 Maverick/gi' \
+  -e 's/lama four scout/Llama 4 Scout/gi' \
+  -e 's/magic stroll/Magistral/gi' \
+  -e 's/majestral/Magistral/gi' \
+  -e 's/mer curry/Mercury/gi' \
+  -e 's/me mo/MiMo/gi' \
+  -e 's/my mo/MiMo/gi' \
   -e 's/mid journey/Midjourney/gi' \
   -e 's/mid jerky/Midjourney/gi' \
+  -e 's/mini stroll/Ministral/gi' \
+  -e 's/minister all/Ministral/gi' \
   -e 's/mist roll/Mistral/gi' \
   -e 's/miss trial/Mistral/gi' \
   -e 's/mist real/Mistral/gi' \
   -e 's/mist roll large/Mistral Large/gi' \
+  -e 's/mist roll medium/Mistral Medium/gi' \
+  -e 's/mist roll small/Mistral Small/gi' \
   -e 's/mix troll/Mixtral/gi' \
   -e 's/mixed roll/Mixtral/gi' \
+  -e 's/nemo tron/Nemotron/gi' \
+  -e 's/knee mo tron/Nemotron/gi' \
+  -e 's/no va/Nova/gi' \
+  -e 's/nova two point oh/Nova 2.0/gi' \
+  -e 's/nova light/Nova Lite/gi' \
+  -e 's/nova pre mere/Nova Premier/gi' \
+  -e 's/ol mo/Olmo/gi' \
+  -e 's/elmo/Olmo/gi' \
   -e 's/fee 4/Phi-4/gi' \
   -e 's/fie 4/Phi-4/gi' \
   -e 's/phi 4/Phi-4/gi' \
   -e 's/phi four/Phi-4/gi' \
   -e 's/fee four/Phi-4/gi' \
+  -e 's/fee 4 mini/Phi-4 Mini/gi' \
+  -e 's/phi four mini/Phi-4 Mini/gi' \
+  -e 's/pick stroll/Pixtral/gi' \
+  -e 's/pix troll/Pixtral/gi' \
+  -e 's/q w q/QwQ/gi' \
+  -e 's/cue double u cue/QwQ/gi' \
+  -e 's/kwok/QwQ/gi' \
   -e 's/quinn/Qwen/gi' \
   -e 's/kwen/Qwen/gi' \
   -e 's/queen/Qwen/gi' \
   -e 's/quinn 2.5/Qwen 2.5/gi' \
   -e 's/kwen two point five/Qwen 2.5/gi' \
+  -e 's/quinn 3/Qwen3/gi' \
+  -e 's/qwen 3/Qwen3/gi' \
+  -e 's/kwen three/Qwen3/gi' \
+  -e 's/quinn 3 max/Qwen3 Max/gi' \
+  -e 's/qwen three max/Qwen3 Max/gi' \
+  -e 's/reeka/Reka/gi' \
+  -e 's/wrecker/Reka/gi' \
+  -e 's/reeka flash/Reka Flash/gi' \
   -e 's/run way/Runway/gi' \
+  -e 's/cede/Seed/gi' \
+  -e 's/so lar/Solar/gi' \
   -e 's/so ra/Sora/gi' \
   -e 's/soar a/Sora/gi' \
   -e 's/stable de fusion/Stable Diffusion/gi' \
+  -e 's/step 3/Step3/gi' \
+  -e 's/step three/Step3/gi' \
   -e 's/wisper/Whisper/gi' \
   -e 's/oh one/o1/gi' \
   -e 's/o one/o1/gi' \
@@ -184,6 +347,10 @@ cat | sed \
   -e 's/oh 3/o3/gi' \
   -e 's/oh three mini/o3-mini/gi' \
   -e 's/o three mini/o3-mini/gi' \
+  -e 's/oh three pro/o3-pro/gi' \
+  -e 's/o three pro/o3-pro/gi' \
+  -e 's/oh four mini/o4-mini/gi' \
+  -e 's/o four mini/o4-mini/gi' \
   # === END AI MODELS ===
   -e 's/sql/SQL/gi' \
   -e 's/s q l/SQL/gi' \
