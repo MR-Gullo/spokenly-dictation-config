@@ -64,8 +64,6 @@ cat | sed \
   -e 's/rest api/REST API/gi' \
   -e 's/graphql/GraphQL/gi' \
   -e 's/graph q l/GraphQL/gi' \
-  # === AI MODELS (auto-generated) ===
-  # Companies
   -e 's/ai 21 labs/AI21 Labs/gi' \
   -e 's/ai twenty one labs/AI21 Labs/gi' \
   -e 's/a i 21 labs/AI21 Labs/gi' \
@@ -131,11 +129,10 @@ cat | sed \
   -e 's/x ai/xAI/gi' \
   -e 's/x a i/xAI/gi' \
   -e 's/ex ai/xAI/gi' \
-  # Models
   -e 's/clawed/Claude/gi' \
   -e 's/cloud/Claude/gi' \
   -e 's/claud/Claude/gi' \
-  -e 's/claw'd/Claude/gi' \
+  -e 's/claw'\''d/Claude/gi' \
   -e 's/clawed 4.5 haiku/Claude 4.5 Haiku/gi' \
   -e 's/cloud 4.5 haiku/Claude 4.5 Haiku/gi' \
   -e 's/claude four point five haiku/Claude 4.5 Haiku/gi' \
@@ -351,7 +348,6 @@ cat | sed \
   -e 's/o three pro/o3-pro/gi' \
   -e 's/oh four mini/o4-mini/gi' \
   -e 's/o four mini/o4-mini/gi' \
-  # === END AI MODELS ===
   -e 's/sql/SQL/gi' \
   -e 's/s q l/SQL/gi' \
   -e 's/my sequel/MySQL/gi' \
@@ -485,4 +481,9 @@ cat | sed \
   -e 's/tee mux/tmux/gi' \
   -e 's/Chalk torque/chalktalk/gi' \
   -e 's/chalk torque/chalktalk/gi' \
+  -e 's/claw.md/claude.md/gi' \
+  -e 's/claw dot md/claude.md/gi' \
+  -e 's/clod.md/claude.md/gi' \
+  -e 's/Claudee/Claude/gi' \
+  -e 's/Claudee.md/CLAUDE.md/gi' \
   -e 's/Chalk Torque/chalktalk/gi'
